@@ -1,0 +1,31 @@
+{% extends 'adminindex.html'%}
+{% block body %}
+
+<body>
+{% if val %}
+<form id="form1" name="form1" method="post" action="">
+  <table width="237" border="1"  class="table table-dark table-striped" id="table">
+    <tr>
+      <th width="73" scope="row">Name</th>
+      <td width="92">Address</td>
+      <td width="50">&nbsp;</td>
+    </tr>
+
+
+    {% for i in val %}
+    <tr>
+    <th height="90" scope="row">{{i[2]}}  {{i[3]}}</th>
+    <td>{{i[6]}},{{i[7]}},{{i[8]}}</td>
+
+       <td>{% if i[12]=='pending' %}<p><a href="accept?lid={{i[1]}}">Accept</a></p>
+      <p><a href="reject?lid={{i[1]}}">Reject</a></p> {%endif%}{% if i[12]=='contractor' %} Accepted {% endif %} {% if i[12]=='rejected' %} Rejected{% endif %}</td>
+    </tr>
+    {% endfor %}
+
+
+  </table>
+</form>
+</body>
+
+{% endif %}
+{%endblock%}

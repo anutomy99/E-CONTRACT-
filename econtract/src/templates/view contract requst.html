@@ -1,0 +1,26 @@
+{% extends 'adminindex.html'%}
+{% block body %}
+
+
+<body>
+<form id="form1" name="form1" method="post" action="corequest">
+  <table width="600" border="1" class="table table-dark table-striped" id="table">
+    <tr>
+      <th scope="row">Username</th>
+      <th>contractorname</th>
+      <td>Work</td>
+      <td>Date</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <th scope="row">{{i[6]}} {{i[7]}}</th>
+      <th>{{i[8]}} {{i[9]}}</th>
+
+      <td>{{i[3]}}</td>
+      <td>{{i[4]}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+{%endblock%}

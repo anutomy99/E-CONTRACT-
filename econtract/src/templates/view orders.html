@@ -1,0 +1,30 @@
+{% extends 'contractorindex.html'%}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="productlist#about">
+  <table width="316" border="1" class="table table-dark table-striped" id="table">
+    <tr>
+      <th width="56" scope="row">User</th>
+      <td width="58">Orderid</td>
+      <td width="50">Total</td>
+      <td width="51">Date</td>
+            <td width="51">Status</td>
+
+      <td width="67">&nbsp;</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <th height="91" scope="row">{{i[5]}} {{i[6]}}</th>
+      <td>{{i[0]}}</td>
+      <td>&nbsp;{{i[2]}}</td>
+      <td>&nbsp;{{i[3]}}</td>
+            <td>&nbsp;{{i[4]}}</td>
+
+      <td><a href="productlist?id={{i[0]}}#about">items</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+
+</form>
+</body>
+{%endblock%}

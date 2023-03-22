@@ -1,0 +1,33 @@
+{% extends 'adminindex.html'%}
+{% block body %}
+
+
+<body>
+<form id="form1" name="form1" method="post" action="feedback">
+  <table width="200" border="1"  class="table table-dark table-striped" id="table">
+    <tr>
+      <th colspan="3" scope="row">Type 
+        <label>
+        <select name="select">
+          <option {% if type=="contractor" %} selected {% endif %}>contractor</option>
+          <option {% if type=="customer" %}selected {% endif %}>customer</option>
+        </select>
+        <input type="submit" name="Submit" value="search" />
+      </label></th>
+    </tr>
+    <tr>
+      <th scope="row">User</th>
+      <td>Feedback</td>
+      <td>Date</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <th scope="row"> {{i[5]}} </th>
+      <td>{{i[1]}}</td>
+      <td>{{i[3]}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+{%endblock%}

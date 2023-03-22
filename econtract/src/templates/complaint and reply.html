@@ -1,0 +1,32 @@
+{% extends 'adminindex.html'%}
+{% block body %}
+
+
+<body>
+<form id="form1" name="form1" method="post" action="reply">
+  <table width="277" border="1" class="table table-dark table-striped" id="table">
+    <tr>
+      <th width="92" scope="row">Complaints</th>
+      <td width="55">Date</td>
+      <td width="47">User</td>
+      <td width="55">&nbsp;Reply</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <th scope="row">{{i[0]}}</th>
+      <td>{{i[1]}}</td>
+
+      <td>{{i[3]}}</td>
+      <td>{%if i[2]=="pending"%}<a href="reply?id={{i[4]}}"> Reply</a>{%endif%}
+
+
+      {%if i[2]!="pending"%}{{i[2]}}{%endif%}
+
+
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+{%endblock%}

@@ -1,0 +1,33 @@
+{% extends 'contractorindex.html'%}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="/addwork#about">
+  <table width="275" border="1" class="table table-dark table-striped" id="table">
+    <tr>
+      <th width="114" scope="row">Work details </th>
+      <th colspan="2">Documents</th>
+      <th colspan="2">Amount</th>
+
+    </tr>
+    {%for i in val%}
+    <tr>
+      <th scope="row">&nbsp;{{i[2]}}</th>
+      <td colspan="2">&nbsp<a href="./static/upload/{{i[3]}}">{{i[3]}}</a>
+      <th scope="row">&nbsp;{{i[4]}}</th>
+      <td><a href="/delt?id={{i[0]}}" class="btn btn-danger">delete</a> </td>
+    </tr>
+    {%endfor%}
+    <tr>
+      <th colspan="5" scope="row">
+        <div align="center">
+        <label>
+        <input type="submit" name="Submit" value="ADD" class="btn btn-success" />
+      </label>
+      </div>
+      </th>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

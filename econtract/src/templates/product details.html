@@ -1,0 +1,44 @@
+{% extends 'contractorindex.html'%}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" enctype="multipart/form-data" action="productdtls#about">
+  <table width="200" border="1" class="table table-dark table-striped" id="table">
+    <tr>
+      <th scope="row">Product</th>
+      <td colspan="2"><label>
+        <input type="text" name="textfield" class="form-control" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Qty</th>
+      <td colspan="2"><label>
+        <input type="number" min="1" name="textfield2" class="form-control" required />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Price</th>
+      <td colspan="2"><label>
+        <input type="number" min="1" name="textfield3" class="form-control" required/>
+      </label></td>
+    </tr>
+     <tr>
+      <th scope="row">Image</th>
+      <td colspan="2"><label>
+        <input type="file" name="file" class="form-control" required/>
+      </label></td>
+    </tr>
+    <tr>
+
+      <th colspan="3" scope="row">
+        <div align="center">
+        <label>
+        <input type="submit" name="Submit" value="Submit" class="btn btn-success"/>
+      </label>
+      </div>
+      </th>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

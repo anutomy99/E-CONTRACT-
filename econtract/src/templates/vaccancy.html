@@ -1,0 +1,42 @@
+{% extends 'contractorindex.html'%}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="addvaccancy#about">
+  <table width="417" border="1"  class="table table-dark table-striped" id="table">
+    <tr>
+      <th width="117" height="25" scope="row">Job</th>
+      <td width="69">Description</td>
+      <td width="106">Date</td>
+      <td width="97">&nbsp;</td>
+      <td width="97">&nbsp;</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <th scope="row">{{i[1]}}</th>
+      <td>{{i[2]}}</td>
+      <td>{{i[4]}}</td>
+      <td>
+        <p><a href="editvaccancy?id={{i[0]}}" class="btn btn-warning" style="width: 100%">Edit</a></p>
+      <p><a href="deletev?id={{i[0]}}" class="btn btn-danger" style="width: 100%">Delete</a></p>
+      </td>
+        <td>
+      <p><a href="pend?id={{i[0]}}" class="btn btn-primary" style="width: 100%">Pending Request</a></p>
+      <p><a href="apend?id={{i[0]}}" class="btn btn-info" style="width: 100%">Approved Request</a></p>
+
+      </td>
+    </tr>
+    {% endfor %}
+    
+    <tr>
+      <th colspan="5" scope="row">
+        <div align="center">
+        <label>
+          <input type="submit" name="Submit" value="Add" class="btn btn-success" style="width: 100%"/>
+      </label>
+      </div></th>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

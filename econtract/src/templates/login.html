@@ -1,0 +1,35 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'index.html'%}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="login">
+  <table  width="10" border="1" class="table table-dark table-striped" id="table">
+    <tr >
+      <th scope="row">username</th>
+      <td><label>
+        <input type="text" name="textfield" required class="form-control"/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">password</th>
+      <td><label>
+        <div align="center">
+          <input type="password" name="textfield2" class="form-control" />
+          </div>
+      </label></td>
+    </tr>
+    <tr align="center">
+      <th colspan="2" scope="row"><label>
+        <input type="submit" name="Submit" class="btn btn-secondary" value="login" />
+        <!--<a href="contractorregister">signup</a></label></th>-->
+    </tr>
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

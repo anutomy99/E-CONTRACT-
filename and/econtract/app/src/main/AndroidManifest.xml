@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.econtract">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img"
+        android:label="Econtract"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/img"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Econtract"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".customviewproduct"
+            android:exported="false" />
+        <activity
+            android:name=".custom_request_status"
+            android:exported="false" />
+        <activity
+            android:name=".custom_view_reply"
+            android:exported="false" />
+        <activity
+            android:name=".custom_application_status"
+            android:exported="false" />
+        <activity
+            android:name=".custom_view_vaccancy"
+            android:exported="false" />
+        <activity
+            android:name=".custom_communication"
+            android:exported="false" />
+        <activity
+            android:name=".custom_buy_products"
+            android:exported="false" />
+        <activity
+            android:name=".custom_view_contractors"
+            android:exported="false" />
+        <activity
+            android:name=".ordered_products"
+            android:exported="false" />
+        <activity android:name=".Test" />
+        <activity
+            android:name=".purchase"
+            android:exported="false" />
+        <activity
+            android:name=".send_feedback_and_rating"
+            android:exported="false" />
+        <activity
+            android:name=".send_complaints_and_view_reply"
+            android:exported="false" />
+        <activity
+            android:name=".view_job_application_status"
+            android:exported="false" />
+        <activity
+            android:name=".vaccancy"
+            android:exported="false" />
+        <activity
+            android:name=".communication"
+            android:exported="false" />
+        <activity
+            android:name=".view_cart"
+            android:exported="false" />
+        <activity
+            android:name=".cart"
+            android:exported="false" />
+        <activity
+            android:name=".buy_products"
+            android:exported="false" />
+        <activity
+            android:name=".request_status"
+            android:exported="false" />
+        <activity
+            android:name=".request_contractor"
+            android:exported="false" />
+        <activity
+            android:name=".contractor_skills"
+            android:exported="false" />
+        <activity
+            android:name=".contractor_works"
+            android:exported="false" />
+        <activity
+            android:name=".contractor_details"
+            android:exported="false" />
+        <activity
+            android:name=".search_contractor"
+            android:exported="false" />
+        <activity
+            android:name=".userhome"
+            android:exported="false" />
+        <activity
+            android:name=".registration"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".LocationService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/2022-2023/Donbosco_contract/and/econtract/app/src/main/res/layout/activity_buy_products.xml" value="0.264" />
+        <entry key="..\:/2022-2023/Donbosco_contract/and/econtract/app/src/main/res/layout/activity_ordered_products.xml" value="0.25416666666666665" />
+        <entry key="..\:/2022-2023/Donbosco_contract/and/econtract/app/src/main/res/layout/activity_view_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_buy_products.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_contractor_details.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_contractor_skills.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_contractor_works.xml" value="0.4" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_custom_application_status.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_custom_buy_products.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_custom_view_contractors.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_custom_view_reply.xml" value="0.1" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_customviewproduct.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_request_contractor.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_search_contractor.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_send_complaints_and_view_reply.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_send_feedback_and_rating.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_userhome.xml" value="0.2" />
+        <entry key="..\:/Users/Keerthana/Desktop/Project/App/econtract/app/src/main/res/layout/activity_view_job_application_status.xml" value="0.17708333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

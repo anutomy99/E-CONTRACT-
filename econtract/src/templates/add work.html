@@ -1,0 +1,34 @@
+{% extends 'contractorindex.html'%}
+{% block body %}
+<body>
+<form action="workadd#about" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="325" border="1" class="table table-dark table-striped" id="table">
+    <tr>
+      <th width="156" scope="row">Work details </th>
+      <td><label>
+        <input type="text" name="textfield" class="form-control" required />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">amount</th>
+      <td><label>
+        <input type="number" min="1" name="textfield2" class="form-control" required />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Document</th>
+      <td> <label><input type="file" name="file2" class="form-control" required /></label></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">
+        <div align="center">
+        <label>
+        <input type="submit" name="Submit" value="Add" class="btn btn-success" />
+      </label>
+      </div>
+      </th>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

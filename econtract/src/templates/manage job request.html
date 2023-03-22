@@ -1,0 +1,39 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'contractorindex.html'%}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action=" ">
+  <table width="362" border="1"  class="table table-dark table-striped" id="table">
+    <tr>
+      <th width="70" scope="row">User</th>
+      <td width="85">Date</td>
+      <td width="99">Work</td>
+      <td></td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <th height="63" scope="row">{{i[0]}} {{i[1]}}</th>
+      <td>{{i[3]}}</td>
+      <td>{{i[2]}}</td>
+      <td>
+        {% if i[4]=='accepted' %} Accepted {% elif i[4]=='rejected' %} rejected
+        {% else %}
+      <p><a href="acceptjob?lid={{i[6]}}">accept</a></p>
+      <p><a href="rejectjob?lid={{i[6]}}">reject</a></p>
+        {% endif %}
+      </td>
+
+    </tr>
+    {% endfor %}
+
+  </table>
+  <!--<a href="#"></a>-->
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

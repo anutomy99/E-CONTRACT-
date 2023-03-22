@@ -1,0 +1,32 @@
+{% extends 'contractorindex.html'%}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="editv">
+  <table width="200" border="1">
+
+    <tr>
+      <th scope="row">Job</th>
+      <td><label>
+        <input type="text" name="textfield" value="{{val[1]}}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Description</th>
+      <td><textarea type="text" name="textfield22" value="{{val[2]}}"/></textarea></td>
+    </tr>
+    <tr>
+      <th scope="row">Date</th>
+      <td><label>
+        <input type="date" name="textfield2" value="{{val[4]}}"/>
+      </label></td>
+    </tr>
+
+    <tr>
+      <th colspan="2" scope="row"><label>
+        <input type="submit" name="Submit" value="update" />
+      </label></th>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}

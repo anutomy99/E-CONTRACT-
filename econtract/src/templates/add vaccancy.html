@@ -1,0 +1,35 @@
+{% extends 'contractorindex.html'%}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="addvacc#about">
+  <table width="200" border="1" class="table table-dark table-striped" id="table">
+    <tr>
+      <th scope="row">Job</th>
+      <td><label>
+        <input type="text" name="textfield" class="form-control" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Description</th>
+      <td></l><label>
+        <textarea type="text" name="textfield2" class="form-control" required /></textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">date</th>
+      <td><label>
+        <input type="date" name="textfield3" class="form-control" required min="{{ d }}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">
+        <div align="center"><label>
+        <input type="submit" name="Submit" value="Submit" class="btn btn-success"  />
+      </label>
+      </div>
+      </th>
+    </tr>
+  </table>
+</form>
+</body>
+{%endblock%}
